@@ -25,8 +25,9 @@ const Header = () => {
           <Icon icon="bx:menu" className={styles.icon} />
         </button>
         <MenuNav isOpen={isOpen} setIsOpen={setIsOpen} /> {/* Passando isOpen para MenuNav */}
-       
-       
+        <a href="/carrinho" className={styles.iconLink}>
+          {/* Adicione seu ícone de carrinho aqui */}
+        </a>
       </div>
     </header>
   );

@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import styles from "./menuNav.module.css";
 import { Icon } from "@iconify/react";
 
-const MenuNav = ({ isOpen, setIsOpen }) => {
+const MenuNav = () => {
   const location = useLocation();
 
   function getLinkClass(path) {
