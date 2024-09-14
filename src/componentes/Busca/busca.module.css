@@ -1,0 +1,68 @@
+.divBusca {
+  background-color: transparent; 
+  margin: 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 0;
+  box-shadow: none; 
+  flex-wrap: nowrap; 
+  background-color: #000000; /* Fundo levemente mais claro ao focar */
+  
+}
+
+.inputBusca {
+  font-size: 14px; 
+  color: #333333; /* Cor texto */
+  font-weight: 400; 
+  padding: 4px 8px; 
+  border: 1px solid #5c5c5c; 
+  border-radius: 9px; 
+  max-width: 160px; /* Define uma largura máxima menor para o input */
+}
+
+.inputBusca:focus {
+  background-color: #f9f9f9; /* Fundo levemente mais claro ao focar */
+  border-color: #ff4500; /* Borda laranja suave ao focar */
+  cursor: pointer;
+}
+
+.botaoBusca {
+  font-size: 14px; /* Tamanho menor da fonte para elegância */
+  color: #ffffff;
+  font-weight: 400; /* Peso de fonte mais leve */
+  padding: 4px 8px; /* Padding reduzido para compacidade */
+  transition: all 0.3s ease;
+  background-color: #ff4500; /* Cor laranja suave */
+  border: none;
+  border-radius: 5px; /* Bordas arredondadas para um design mais suave */
+  margin-left: 5px;
+}
+
+.botaoBusca:hover {
+  background-color: #e63e00; /* Cor de fundo um pouco mais escura no hover */
+  cursor: pointer;
+}
+
+.botaoBusca svg {
+  font-size: 14px; /* Tamanho menor do ícone para um design mais delicado */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .divBusca {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .inputBusca {
+    width: auto;
+    margin-bottom: 0;
+    max-width: 90px; /* Define uma largura máxima menor para telas pequenas */
+  }
+
+  .botaoBusca {
+    width: auto;
+    margin-left: 5px;
+  }
+}

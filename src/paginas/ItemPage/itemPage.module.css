@@ -1,0 +1,130 @@
+/* itemPage.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px); /* Considera a altura do header, se houver */
+  padding: 20px; 
+}
+
+.item {
+  display: flex; 
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Para conter a sombra dentro do card */
+  max-width: 1500px; /* Largura máxima para telas maiores */
+  width: 100%; /* Ocupa a largura total em telas menores */
+  flex-wrap: wrap; /* Para garantir que elementos se adaptem ao espaço disponível */
+}
+
+.item img {
+  width: 40%;
+  object-fit: cover; /* Ajusta a imagem para cobrir a área, pode cortar as bordas */
+  height: 100%;
+  padding: 10px; /* Padding na imagem */
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.1)); /* Sombra sutil na imagem */
+}
+
+.info {
+  padding: 20px;
+  width: 60%; 
+  background: #8a0000; /* Adiciona um card por trás do texto */
+  padding: 20px; /* Padding no card do texto */
+  font-family: "Helvetica", "Arial", sans-serif; /* Fonte estilo Apple */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: #f7f7f7;
+}
+
+.price {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+  .item {
+    flex-direction: column; 
+    align-items: center; /* Alinha os itens ao centro na vertical */
+  }
+
+  .item img {
+    width: 80%; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  .info {
+    width: 90%; /* Ajusta a largura da informação para ocupar mais espaço */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column; 
+    align-items: center; /* Alinha os itens ao centro na vertical */
+  }
+
+  .item img {
+    width: 100%; /* A imagem ocupa 100% da largura em telas pequenas */
+    height: 300px; /* Altura fixa para a imagem em telas menores */
+  }
+
+  .info {
+    width: 100%;
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 15px; /* Diminui o padding para ajustar melhor em telas pequenas */
+  }
+
+  .price {
+    font-size: 1.3rem; /* Ajusta o tamanho da fonte em telas menores */
+  }
+
+  .buyButton {
+    padding: 8px 16px; /* Diminui o tamanho do botão para telas menores */
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares antigos) */
+@media (max-width: 480px) {
+  .item img {
+    height: 200px; /* Ajusta a altura da imagem em telas muito pequenas */
+  }
+
+  .info {
+    padding: 10px; /* Reduz ainda mais o padding */
+  }
+
+  .price {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .buyButton {
+    padding: 6px 12px; /* Diminui ainda mais o botão */
+  }
+}
+
+.buyButton {
+  display: inline-block;
+  padding: 10px 20px; 
+  background-color: #3483fa; /* Cor azul do Mercado Livre */
+  color: white;
+  margin-top: 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+.buyButton:hover {
+  background-color: #2968c8; /* Cor azul mais escura ao passar o mouse */
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center; 
+  margin-top: 20px;
+  gap: 10px; 
+}

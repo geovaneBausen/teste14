@@ -1,0 +1,66 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #fef3e2; /* Fundo laranja suave que lembra fogo */
+}
+
+.error h1 {
+  font-size: 3rem;
+  color: #d84315; /* Laranja queimado para o título, evocando fogo */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.error p {
+  font-size: 1.25rem;
+  color: #bf360c; /* Vermelho escuro para o texto, lembrando brasas */
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  background-color: rgba(191, 54, 12, 0.1); /* Fundo vermelho claro e translúcido */
+}
+
+.botoes {
+  display: flex;
+  gap: 20px;
+}
+
+.botaoNaoEncontrado {
+  background-color: #ff5722; /* Laranja intenso para os botões, evocando calor */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.botaoNaoEncontrado:hover,
+.botaoNaoEncontrado:focus {
+  background-color: #e64a19; /* Laranja mais escuro para hover e foco */
+  outline: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .error h1 {
+    font-size: 2rem;
+  }
+  
+  .error p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagem {
+    width: 200px;
+  }
+}

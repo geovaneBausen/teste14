@@ -1,0 +1,65 @@
+/* login.module.css */
+
+.formCard {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px; /* Largura máxima ajustada para o formulário de login */
+    margin: 50px auto; /* Margens para centralizar o card */
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Centraliza o conteúdo dentro do card */
+  }
+  
+  .formTitle {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .formGroup label {
+    display: block; /* Rótulos em linha separada */
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .formGroup input {
+    width: 100%; /* Campos de entrada ocupando a largura total */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .formGroup input:focus {
+    border-color: #007aff;
+  }
+  
+  .loginForm button {
+    background-color: #007aff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espaço superior */
+  }
+  
+  .loginForm button:hover {
+    background-color: #005bb5;
+  }

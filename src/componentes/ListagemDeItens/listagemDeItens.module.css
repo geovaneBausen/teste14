@@ -1,0 +1,68 @@
+.h1 {
+    font-size: 23px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    margin: auto;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+  
+.carrousel ul {
+   background-color:#fff;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 15px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra discreta para realçar */
+}
+
+.carrousel ul li {
+    background-color: #fff; /* Branco puro para o conteúdo */
+    padding: 20px;
+    border: 1px solid #000000; /* Borda fina */
+    display: block;
+    width: 250px; /* Largura ajustada para o conteúdo */
+    margin: 10px;
+    border-radius: 10px; /* Borda arredondada suave */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    transition: transform 0.2s ease; /* Transição suave para hover */
+}
+
+.carrousel ul li:hover {
+    transform: translateY(-5px); /* Elevação sutil ao passar o mouse */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+.carrousel ul li img {
+    max-width: 150px;
+    background-color: #13315C; /* Cor de fundo escura para a imagem */
+    border-radius: 5px; /* Borda arredondada suave para a imagem */
+}
+
+.carrousel ul li a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #c94c27; /* Cor do texto laranja vibrante */
+}
+
+.carrousel ul li h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold; /* Fonte em negrito para destacar */
+}
+
+.carrousel ul li p {
+    color: #5e5e5e; /* Cor do texto cinza escuro */
+    font-style: italic;
+    font-size: 14px; /* Tamanho de fonte menor para o parágrafo */
+}

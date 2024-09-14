@@ -1,0 +1,58 @@
+.itemCard {
+    /* Estilo geral para o item */
+    border: 1px solid #de0000;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Define a largura do card */
+    transition: transform 0.2s ease-in-out;
+    :hover {
+      transform: scale(1.01);}
+  }
+  
+  .itemLink {
+    text-decoration: none; /* Remove o underline padrão */
+    color: #333; /* Define a cor do texto */
+  }
+  
+  .itemImage {
+    width: 100%; /* A imagem ocupará toda a largura do card */
+    height: auto; /* A altura da imagem será ajustada automaticamente */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    animation: float 2s infinite alternate;
+    
+  }
+  
+  .itemTitle {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .itemPrice {
+    font-size: 1rem;
+    color: #28a745; /* Cor verde para o preço */
+  }
+  
+  .itemStock {
+    font-size: 0.9rem;
+    color: #6c757d; /* Cor cinza claro para o estoque */
+  }
+  
+  .itemDetails {
+    display: block; /* Torna o texto um bloco */
+    text-align: center; /* Centraliza o texto */
+    padding-top: 10px;
+    font-weight: bold;
+    color: #007bff; /* Cor azul para o "veja os detalhes" */
+    cursor: pointer; /* Altera o cursor para um ponteiro */
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .itemCard {
+      width: 100%; /* O card ocupará toda a largura da tela */
+    }
+  }
+ 

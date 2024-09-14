@@ -1,0 +1,16 @@
+.principal {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  margin: 0; /* Remove as margens padrão do body */
+  padding-top: 40px; /* Adicione um padding-top igual à altura do nav */
+}
+
+.container {
+  background-color: #060000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #5e5e5e;
+  width: 100%;
+  padding: 40px 40px;
+  
+}

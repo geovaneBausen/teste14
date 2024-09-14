@@ -1,0 +1,23 @@
+
+
+.contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .contador__botao {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+ 

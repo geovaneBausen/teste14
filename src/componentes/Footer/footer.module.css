@@ -1,0 +1,22 @@
+/* footer.module.css */
+.footer {
+  display: flex;
+  justify-content: center; /* Alinha o conteúdo ao centro horizontalmente */
+  align-items: center; /* Alinha o conteúdo ao centro verticalmente */
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.iconContainer {
+  display: flex; /* Permite alinhar o ícone e o link */
+  align-items: center; /* Alinha verticalmente o ícone e o link */
+  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+.githubIcon {
+  font-size: 30px; /* Aumenta o tamanho do ícone */
+  color: #ffffff; /* Cor do ícone */
+  margin-right: 1px; /* Espaçamento entre o ícone e o link */
+}
+
