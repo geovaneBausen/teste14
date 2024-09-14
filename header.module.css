@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 1px solid #ea0000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona leve sombra */
+ 
+}
+.leftSection, .rightSection {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+}
+.icon {
+  color: rgb(189, 0, 0);
+  font-size: 30px;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px; /* Tamanho maior do logo */
+  height: auto;
+}
+
+.storeName {
+  margin-left: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.centerSection {
+  flex: 1;
+  display: none; /* Ocultado por enquanto */
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 0.3s ease;
+}
+
+nav ul li {
+  padding: 0 10px;
+}
+
+.link {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.linkAtivo {
+  font-weight: 600;
+  color: rgb(255, 69, 0);
+}
+
+.link:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 50px; /* Reduz o tamanho do header em telas menores */
+  }
+
+  nav ul {
+    display: none; /* Esconde o menu padrão em telas menores */
+    flex-direction: column;
+    position: absolute;
+    top: 50px; /* Posiciona abaixo do header */
+    right: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul.open {
+    display: flex; /* Exibe o menu quando estiver aberto */
+  }
+
+}
+.hamburgerButton {
+  display: none; /* Oculta o botão em telas maiores */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburgerButton {
+    display: block; /* Exibe o botão em telas menores */
+  }
+
+  nav ul {
+    /* ... estilos existentes ... */
+    top: 50px; /* Posiciona abaixo do header */
+    right: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%); /* Inicialmente escondido acima do header */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav ul.open {
+    transform: translateY(0); /* Exibe o menu quando aberto */
+  }
+}

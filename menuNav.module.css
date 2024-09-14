@@ -1,0 +1,81 @@
+nav ul {
+  background-color: #ffffff;
+  border-top: none;
+  border-bottom: none;
+  list-style: none;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(241, 232, 232, 0.1);
+}
+
+.link {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  /* Transição suave para hover */
+}
+
+
+.linkAtivo {
+  font-weight: 600;
+  color: rgb(255, 69, 0);
+}
+
+nav ul li {
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  /* Remove o sublinhado dos links */
+}
+
+.link:hover {
+  background-color: #f0f0f0;
+  /* Cor de fundo ao passar o mouse */
+  cursor: pointer;
+  /* Cursor de ponteiro ao passar o mouse */
+  border-radius: 5px;
+  /* Arredonda as bordas ao passar o mouse */
+  color: black;
+  /* Altera a cor do texto ao passar o mouse */
+  text-decoration: none;
+  /* Garante que não haja sublinhado ao passar o mouse */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+  /* Para telas menores que 768px */
+  nav ul {
+    flex-direction: column;
+    /* Organiza os itens verticalmente */
+    justify-content: flex-start;
+    /* Alinha os itens no topo */
+  }
+
+  nav ul li {
+    padding: 10px;
+    /* Adiciona padding para espaçamento */
+
+  }
+
+}
+
+.link:hover {
+  background-color: #f0f0f0;
+  /* Cor de fundo ao passar o mouse */
+  cursor: pointer;
+  /* Cursor de ponteiro ao passar o mouse */
+  border-radius: 5px;
+  /* Arredonda as bordas ao passar o mouse */
+  color: black;
+  /* Altera a cor do texto ao passar o mouse */
+}
+
